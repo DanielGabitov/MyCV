@@ -1,0 +1,186 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+\usepackage[default]{sourcesanspro}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\centering
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+
+
+\begin{center}
+    {\LARGE Daniel Gabitov} \\ \vspace{2pt}
+    \begin{multicols}{2}
+    \begin{flushleft}
+    Saint-Petersburg, Russia\\ 
+    GitHub: \href{{https://github.com/DanielGabitov}}{\textcolor{blue}{DanielGabitov}}\\
+    \end{flushleft}
+    
+    \begin{flushright}
+    Email:  work.gabitov@gmail.com \\
+    Mobile No.: 89277866211\\
+    \end{flushright}
+    \end{multicols}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\vspace{-2pt}
+\section{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {\textbf{Higher School of Economics}}{Russia, SPb}
+      {Currently pursuing bachelors degree in applied mathematics and informatics.}{Aug. 2019 -- June. 2023}
+    
+  \resumeSubHeadingListEnd
+  
+    \resumeSubHeadingListStart
+      \resumeSubheading
+      {\textbf{RELEVANT COURSEWORK:}}
+            {}\textbf{:}\\
+\textbf{Programming courses}{: algorithms and data structures, Java, C++, UNIX, functional programming (Haskell) }\\
+\textbf{Math courses}{: calculus, discrete mathematics, algebra, formal languages}\\    
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+ 
+    \resumeSubheading
+      {2D Game}{}
+      {3 participants}{March 2020 - June 2020}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+    {A platformer in which the player's goal is to paint the largest amount of blocks his specific color in a limited time.} \\
+     \textbf{Tools}{: C++, QT, GIT.} \\
+     \textbf{My work}{: Game logic, level-loading, game engine.}\\
+     \textbf{GitHub}{: \href{{https://github.com/DanielGabitov/ProjectFivaproljo}}{\textcolor{blue}{ProjectFivaproljo}.}}
+    }}
+ \end{itemize}
+ 
+  \resumeSubheading
+      {Huffman Archiver}{}
+      {Developed an archiver based on the Huffman algorithm that can compress and decompress both binary and text
+files.}{June 2020}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Tools}{: C++.} \\
+     \textbf{GitHub}{: \href{{https://github.com/DanielGabitov/HSE-C-/tree/master/hw_03}}{\textcolor{blue}{HuffmanArchiver}.}}
+    }}
+    
+ \end{itemize}
+ 
+ \resumeSubheading
+      {Mobile app (in progress)}{}
+      {3 participants}{March 2021 - Now}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+    {Android app to organize and search offline events.} \\
+     \textbf{Tools}{: Java, Spring, PostgreSQL, Docker, FlyWay.} \\
+     \textbf{My work}{: Backend.}\\
+     \textbf{GitHub}{: \href{{https://github.com/DanielGabitov/namelessProject}}{\textcolor{blue}{namelessProject}.}}
+    }}
+    
+ \end{itemize}
+  \resumeSubHeadingListEnd
+  
+  
+
+
+%-----------Technical Skills-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: C++, Java, Bash, Haskell} \\
+     \textbf{Tools}{: Git, Docker, Spring, PostgreSQL, QT}\\
+    }}
+ \end{itemize}
+
+%-----------Languages-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{}{Russian (Native)} \\
+     \textbf{}{English  (Upper-Intermediate)}\\
+    }}
+ \end{itemize}
+
+\end{document}
