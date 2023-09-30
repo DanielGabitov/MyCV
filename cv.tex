@@ -19,6 +19,7 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
 
 
 \pagestyle{fancy}
@@ -137,20 +138,34 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Higher School of Economics}{St. Petersburg, Russia}
-      {Currently pursuing bachelors degree in applied mathematics and computer science.}{Aug. 2019 - June. 2023}
+      {Currently pursuing master degree.}{Aug. 2023 - June. 2025}
+    \resumeSubheading
+      {Higher School of Economics}{St. Petersburg, Russia}
+      {Bachelor degree in applied mathematics and computer science.}{Aug. 2019 - June. 2023}
   \resumeSubHeadingListEnd
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
       \resumeExpSubheading
-      {Yandex}{St. Petersburg, Russia (remote)}
-      {Software Engineer Intern, Yandex Lavka team}{July 2021 - November. 2021}
-      {\skill{C++} \skill{Web development}}
+      {Yandex.Metrika}{St. Petersburg, Russia}
+      {Middle Software Engineer}{July 2022 - Present}
+      {\skill{C++} \skill{Highload} \skill{Distributed systems} \skill{Clickhouse} \skill{YDB} }
       \resumeDesc{
       \begin{itemize}
-          \item Delivered new feature: cashback discount.
-          \item Investigated and fixed a bug with price mismatch in receipt.
-          \item Updated several endpoints and got rid of hard-coded logic.
+          \item Implemented a microservice responsible for collecting antifraud features for CatBoost model. Microservice is able to withstand 1 million RPS, uses Counting Bloom Filter to reduce amount of database storage and uses caching for decreasing read-load on the database.
+          \item Migrated a bunch of microservices on to the new real-time processing framework BigRT.
+      \end{itemize}
+      }
+
+
+      \resumeExpSubheading
+      {Yandex.Lavka}{St. Petersburg, Russia (remote)}
+      {Software Engineer Intern}{July 2021 - November. 2021}
+      {\skill{C++} \skill{Userver}}
+      \resumeDesc{
+      \begin{itemize}
+          \item Engaged in easy, intern-like tasks.
+          \item Successfully completed an internship and received the return offer.
       \end{itemize}}
 
   \resumeSubHeadingListEnd
@@ -162,11 +177,6 @@
       {\href{https://github.com/DanielGabitov/lock-free-set}{Lock-free list}}{}
       {\skill{Java} \skill{Concurrency}}{March 2022}
           \resumeDesc{Implemented lock-free list and tested it with \href{https://github.com/Kotlin/kotlinx-lincheck}{Lincheck}.}
-
-    \resumeProjSubheading
-      {\href{https://github.com/DanielGabitov/namelessProject}{Mobile app backend}}{}
-      {\skill{Java} \skill{PostgreSQL} \skill{Spring} \skill{FlyWay} \skill{Docker}}{June 2021}
-          \resumeDesc{In team with my classmates created a simple android app. During this project I got a chance to work with Spring Boot framework and created a plain web-application performing CRUD operations with PostgreSQL, deployed project using Docker.}
 
 
      \resumeProjSubheading
@@ -187,7 +197,7 @@
      \textbf{Languages}{: C++, Java, Python.}
    }\vspace{-7pt}
    \item{
-     \textbf{Technologies}{: SQL, Docker, Spring, FastAPI, Git. }
+     \textbf{Technologies}{: YDB, ClickHouse, SQL, Docker, Git. }
    }
  \resumeSubHeadingListEnd
 
